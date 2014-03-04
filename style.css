@@ -1,0 +1,272 @@
+/*
+Theme Name:         Bandpress
+Theme URI:          hcs.harvard.edu/awk/wordpress
+Description:        Bandpress is a custom theme based on Foundation 5 by Zurb
+Version:            1.0.0
+Author:             Yuqi Hou
+Author URI:         yuqihou.com
+
+License:            MIT License
+License URI:        http://www.opensource.org/licenses/mit-license.php
+*/
+
+/*TYPOGRAPHY
+========================== */
+
+@import url(http://fonts.googleapis.com/css?family=Droid+Serif);
+@import url(http://fonts.googleapis.com/css?family=Esteban);
+@import url(http://fonts.googleapis.com/css?family=Varela+Round);
+@import url(http://fonts.googleapis.com/css?family=Archivo+Black);
+
+@font-face {
+    font-family: 'chunkfive';
+    src: url('fonts/chunkfive.eot');
+    src: url('fonts/chunkfive.eot?#iefix') format('embedded-opentype'),
+         url('fonts/chunkfive.woff') format('woff'),
+         url('fonts/chunkfive.ttf') format('truetype'),
+         url('fonts/chunkfive.svg#chunkfiveroman') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.nomargin {
+  margin: 0;
+}
+
+.panel h4 {
+  font-family: archivo black;
+  text-align: center;
+  color: orange;
+}
+
+p{
+  font-family: Esteban, Droid Serif, serif;
+
+}
+
+h1 {
+  font-family: 'archivo black';
+}
+
+footer p {
+  font-family: 'Varela Round';
+}
+
+p a {
+ font-family: 'Varela Round'; 
+}
+
+a{
+  color: orange;
+  font-family: archivo black;
+}
+
+a:hover{
+  color:darkorange;
+}
+.orbit-caption {
+  text-align: center;
+  font-family: archivo black;
+  font-size: 4em !important;
+}
+
+.orbit-bullets-container {
+  background-color: #34495e;
+}
+
+.title a{
+  font-family: archivo black;
+  color: white;
+}
+
+.title a:hover{
+  color: #ccc;
+}
+
+/*HOMEPAGE FEATURED BANNER */
+
+.banner {
+  background-image:url('images/banner.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% auto;
+}
+
+.home .featured {
+  background: #34495e;
+}
+
+.featured{
+  padding: 55px 0;
+  border: none;
+}
+
+.featured a{
+  color: #fff;
+  text-align: center;
+  display: block;
+}
+
+.featured h1{
+  color: white;
+  display: block;
+  text-align: center;
+}
+
+.featured h2{
+  color: white;
+  display: block;
+  text-align: center;
+}
+
+.featured h3{
+  color: white;
+  display: block;
+}
+
+.featured p {
+  color: white;
+  display: block;
+  text-align: center;
+}
+
+/*HOMEPAGE FEATURED BANNER END */
+
+/*ABOUT US FEATURED BANNER */
+.featured-about{
+  background: #f39c12;
+  padding: 125px 0;
+  border: none;
+}
+
+.featured-about a{
+  color: #fff;
+  text-align: center;
+  display: block;
+}
+
+.featured-about h1{
+  color: white;
+  display: block;
+  text-align: center;
+}
+
+.featured-about h2{
+  color: white;
+  display: block;
+  text-align: center;
+}
+
+
+
+.featured-about p {
+  color: white;
+  display: block;
+  text-align: center;
+}
+
+/*ABOUT US FEATURED BANNER END */
+
+.dropshadow {
+    box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.35);
+    -moz-box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.35);
+    -webkit-box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.35);
+}
+
+.main{
+  margin: 1em auto;
+  font-size: 5em;
+  color: #000;
+  box-shadow: 1px #ccc;
+}
+
+.highlight{
+  padding:20px 20px;
+  background:#34495e;
+  margin-bottom: 1em;
+}
+
+
+/*NAVBAR
+========================== */
+nav.tab-bar{
+  background: #34495e;
+}
+
+/*FOOTER
+========================== */
+footer{
+  background: #34495e;
+  padding-top:1.3em;
+  color: white;
+}
+
+.copyright{
+  background:#ecf0f1;
+
+}
+
+.orbit li {
+  height:600px;
+  overflow: hidden;
+}
+
+.wp-caption {
+float: right;
+border: 1px solid #ddd;
+text-align: left;
+background-color: #f3f3f3;
+padding: 5px;
+-moz-border-radius: 3px;
+-khtml-border-radius: 3px;
+-webkit-border-radius: 3px;
+border-radius: 3px;
+margin: 0em 0em 1em 1.4em;
+}
+.wp-caption img {
+margin: 0;
+padding: 0;
+border: 0 none;
+}
+.wp-caption p.wp-caption-text {
+font-size: .8em;
+/*line-height: 17px;*/
+padding: 5px;
+margin: 0;
+}
+
+.content.active {
+  background-color: #eee;
+  padding: 15px;
+  margin-top: -4px;  
+}
+
+/* twitter */
+
+.wb-twitter-wrapper { background: white; height: 298px; border: 1px solid #e8e8e8; max-width: 520px; position: relative; overflow: hidden; }
+.wb-twitter-wrapper .wp-overlay-line { position: absolute; top: 41px; background: #e8e8e8; height: 1px; width: 100%; }
+
+body.admin-bar .fixed {
+  position:fixed;
+  top: 28px;
+  z-index: 1000;
+  height: 40px;
+}
+
+/* for smaller screen sizes */
+@media (max-width: 782px) {
+  body.admin-bar .fixed {
+    position:fixed;
+    top: 46px;
+    z-index: 1000;
+    height: 40px;
+  }
+  .orbit li {
+    height:350px;
+    overflow: hidden;
+  }
+  .orbit-caption {
+    font-size: 2.5em !important;
+  }
+}
+
